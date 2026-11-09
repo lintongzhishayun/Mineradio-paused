@@ -698,7 +698,7 @@ function setImmersiveMode(on) {
     var bottomBarEnter = document.getElementById('bottom-bar');
     if (bottomBarEnter) bottomBarEnter.classList.add('visible');
     closeImmersiveInterference();
-    if (!fx.particleLyrics) setParticleLyricsSilently(true);
+    // Preserve the user's lyric visibility preference in immersive mode.
     controlsAutoHide = true;
     syncControlsAutoHideButton();
     updateImmersiveButton();
